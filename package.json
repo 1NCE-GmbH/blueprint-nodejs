@@ -1,0 +1,24 @@
+{
+  "name": "mqtt_client",
+  "version": "1.0.0",
+  "description": "MQTT_client implementation on nodejs",
+  "main": "endToEnd.js",
+  "scripts": {
+    "onboarding_mqtt_udp_gps": "node ./src/examples/onboarding_mqtt_udp_gps/index.js",
+    "hardcoded_udp": "node ./src/examples/hardcoded_udp/index.js",
+    "onboarding_mqtt": "node ./src/examples/onboarding_mqtt/index.js",
+    "udp_gps": "node ./src/examples/udp_gps/index.js",
+    "udp_env": "node ./src/examples/udp_env/index.js"
+  },
+  "keywords": [
+    "mqtt",
+    "connectivity suite",
+    "udp",
+    "onboarding"
+  ],
+  "author": "1NCE",
+  "license": "ISC",
+  "dependencies": {
+    "aws-iot-device-sdk": "^2.2.6"
+  }
+}
