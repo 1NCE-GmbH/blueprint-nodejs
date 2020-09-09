@@ -1,8 +1,7 @@
 {
-  "name": "mqtt_client",
+  "name": "blueprint-nodejs",
   "version": "1.0.0",
-  "description": "MQTT_client implementation on nodejs",
-  "main": "endToEnd.js",
+  "description": "The NodeJS onboarding blueprint for the 1NCE IoT Connectivity Suite",
   "scripts": {
     "onboarding_mqtt_udp_gps": "node ./src/examples/onboarding_mqtt_udp_gps/index.js",
     "hardcoded_udp": "node ./src/examples/hardcoded_udp/index.js",
@@ -14,7 +13,8 @@
     "mqtt",
     "connectivity suite",
     "udp",
-    "onboarding"
+    "onboarding",
+    "blueprint"
   ],
   "author": "1NCE",
   "license": "ISC",
