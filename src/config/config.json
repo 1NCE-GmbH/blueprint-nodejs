@@ -1,12 +1,25 @@
 {
     "onboardingUrl": "https://device.connectivity-suite.cloud/device-api/onboarding",
-    "udpAddr": "udp.connectivity-suite.cloud",
-    "udpPort": 4445,
-    "messageAmount": 10,
-    "sleep": 0,
-    "udpMessageBase64": "VDIwMjAtMDctMzEgMTY6MDM6MjBATHdQSe9iTkA4G22Gaz6SAARBBZFoQaU3TD+gAAABWAAPABgyMDIwMDczMS0xOTAzMjBHUFMgTG9nZ2VyOiAyMDIwMDczMS0xOTAzMjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
-    "gpsCsvFilePath": "./translator/gps_data_small.txt",
-    "gpsTemplatePath": "../../translator/gps_template.json",
-    "envCsvFilePath": "./translator/env_data_coll_data.txt",
-    "envTemplatePath": "../../translator/environment_data_collector_template.json"
+    "udp": {
+        "udpAddr": "udp.connectivity-suite.cloud",
+        "udpPort": 4445,
+        "messageAmount": 10,
+        "sleep": 0,
+        "udpMessageBase64": "VDIwMjAtMDctMzEgMTY6MDM6MjBATHdQSe9iTkA4G22Gaz6SAARBBZFoQaU3TD+gAAABWAAPABgyMDIwMDczMS0xOTAzMjBHUFMgTG9nZ2VyOiAyMDIwMDczMS0xOTAzMjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "gpsCsvFilePath": "./translator/gps_data_small.txt",
+        "gpsTemplatePath": "../../translator/gps_template.json",
+        "envCsvFilePath": "./translator/env_data_coll_data.txt",
+        "envTemplatePath": "../../translator/environment_data_collector_template.json"
+    },
+    "coap": {
+        "host": "coap.connectivity-suite.cloud",
+        "port": 5683,
+        "query": "t=exampleTopic",
+        "confirmable" : true,
+        "reqContentFormat" : "application/json",
+        "reqPath": "",
+        "postPayload": {  "timestamp": 32423434324,  "desc": "Example message"},
+        "messageAmount": 10
+    }
+    
 }

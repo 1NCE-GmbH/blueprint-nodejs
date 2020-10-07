@@ -4,11 +4,7 @@ const udpClient = dgram.createSocket("udp4");
 
 var config = require("../config/config.json");
 
-const udpAddr = config.udpAddr;
-const udpPort = config.udpPort;
-
-const sleep = config.sleep; // ms to sleep between messages (0 = burst mode)
-const udpMessage = config.udpMessageBase64;
+const {udpAddr, udpPort, sleep, udpMessageBase64} = config.udp;
 
 udpClient.on("error", (err) => {
   console.log(`udpClient error:\n${err.stack}`);
@@ -31,7 +27,7 @@ udpClient.on("close", () => {
 function sendUDPMessage(message) {
   return new Promise((resolve, reject) => {
     udpClient.send(message, udpPort, udpAddr, (err) => {
-      console.log("UDP Message sent");
+      console.log(`UDP Message sent to ${udpAddr}:${udpPort}`);
       if (err) {
         reject(err);
         return;
@@ -50,7 +46,7 @@ function closeUDPClient() {
 
 async function sendRepeatedUDPMessageFromBase64(amount) {
   console.log("Sending to UDP address: " + udpAddr);
-  const message = Buffer.from(udpMessage, "base64");
+  const message = Buffer.from(udpMessageBase64, "base64");
   for (let i = 0; i < amount; i++) {
     await sendUDPMessage(message);
     await new Promise((resolve) => setTimeout(resolve, sleep));

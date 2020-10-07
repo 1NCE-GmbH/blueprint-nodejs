@@ -1,13 +1,14 @@
 {
   "name": "blueprint-nodejs",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "The NodeJS onboarding blueprint for the 1NCE IoT Connectivity Suite",
   "scripts": {
     "onboarding_mqtt_udp_gps": "node ./src/examples/onboarding_mqtt_udp_gps/index.js",
     "hardcoded_udp": "node ./src/examples/hardcoded_udp/index.js",
     "onboarding_mqtt": "node ./src/examples/onboarding_mqtt/index.js",
     "udp_gps": "node ./src/examples/udp_gps/index.js",
-    "udp_env": "node ./src/examples/udp_env/index.js"
+    "udp_env": "node ./src/examples/udp_env/index.js",
+    "coap_post": "node ./src/examples/coap_post/index.js"
   },
   "keywords": [
     "mqtt",
@@ -19,6 +20,7 @@
   "author": "1NCE",
   "license": "ISC",
   "dependencies": {
-    "aws-iot-device-sdk": "^2.2.6"
+    "aws-iot-device-sdk": "^2.2.6",
+    "coap": "^0.24.0"
   }
 }

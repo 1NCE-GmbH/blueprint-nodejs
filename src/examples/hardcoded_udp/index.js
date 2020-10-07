@@ -4,7 +4,7 @@ const {
   closeUDPClient,
 } = require("../../util/udp");
 
-const messageAmount = config.messageAmount;
+const messageAmount = config.udp.messageAmount;
 
 async function hardcodedUDP() {
   await sendRepeatedUDPMessageFromBase64(messageAmount);

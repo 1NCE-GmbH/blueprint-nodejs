@@ -7,8 +7,7 @@ const { sendUDPMessage, closeUDPClient } = require("../../util/udp");
 const { subscribeMQTTTopic } = require("../../util/mqtt");
 
 var config = require("../../config/config.json");
-const messageAmount = config.messageAmount;
-const gpsCsvFilePath = config.gpsCsvFilePath;
+const {messageAmount, gpsCsvFilePath} = config.udp;
 
 async function onboardingMQTTUDP() {
   // holds state attributes, like counter

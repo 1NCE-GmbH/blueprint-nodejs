@@ -2,10 +2,9 @@ const config = require("../config/config.json");
 const { processSense } = require("./templateEncode");
 const fs = require("fs");
 const readline = require("readline");
+const gpsTemplate = require(config.udp.gpsTemplatePath);
 
-const gpsTemplate = require(config.gpsTemplatePath);
-
-const envTemplate = require(config.envTemplatePath);
+const envTemplate = require(config.udp.envTemplatePath);
 
 function makeLinesFromCSV(state, filePath, callback) {
   if (!filePath) {

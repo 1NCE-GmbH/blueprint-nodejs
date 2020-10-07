@@ -1,5 +1,5 @@
 var config = require("../../config/config.json");
-const gpsCsvFilePath = config.gpsCsvFilePath;
+const gpsCsvFilePath = config.udp.gpsCsvFilePath;
 const { closeUDPClient, sendUDPMessage } = require("../../util/udp");
 const {
   makeLinesFromCSV,

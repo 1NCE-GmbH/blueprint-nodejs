@@ -1,5 +1,5 @@
 var config = require("../../config/config.json");
-const envCsvFilePath = config.envCsvFilePath;
+const envCsvFilePath = config.udp.envCsvFilePath;
 const { closeUDPClient, sendUDPMessage } = require("../../util/udp");
 const {
   makeLinesFromCSV,
