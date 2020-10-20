@@ -34,6 +34,7 @@
                         {
                             "asset": "gps.latitude",
                             "value": {
+                                "byteorder": "little",
                                 "byte": 20,
                                 "bytelength": 8,
                                 "type": "float"
@@ -42,6 +43,7 @@
                         {
                             "asset": "gps.longitude",
                             "value": {
+                                "byteorder": "little",
                                 "byte": 28,
                                 "bytelength": 8,
                                 "type": "float"
@@ -50,14 +52,16 @@
                         {
                             "asset": "gps.accuracy",
                             "value": {
+                                "byteorder": "little",
                                 "byte": 36,
                                 "bytelength": 2,
-                                "type": "int"
+                                "type": "uint"
                             }
                         },
                         {
                             "asset": "gps.altitude",
                             "value": {
+                                "byteorder": "little",
                                 "byte": 38,
                                 "bytelength": 4,
                                 "type": "float"
@@ -66,6 +70,7 @@
                         {
                             "asset": "gps.geoid_height",
                             "value": {
+                                "byteorder": "little",
                                 "byte": 42,
                                 "bytelength": 4,
                                 "type": "float"
@@ -74,6 +79,7 @@
                         {
                             "asset": "gps.speed",
                             "value": {
+                                "byteorder": "little",
                                 "byte": 46,
                                 "bytelength": 4,
                                 "type": "float"
@@ -82,6 +88,7 @@
                         {
                             "asset": "gps.bearing",
                             "value": {
+                                "byteorder": "little",
                                 "byte": 50,
                                 "bytelength": 2,
                                 "type": "int"
@@ -90,17 +97,19 @@
                         {
                             "asset": "gps.sat_used",
                             "value": {
+                                "byteorder": "little",
                                 "byte": 52,
                                 "bytelength": 2,
-                                "type": "int"
+                                "type": "uint"
                             }
                         },
                         {
                             "asset": "gps.sat_inview",
                             "value": {
+                                "byteorder": "little",
                                 "byte": 54,
                                 "bytelength": 2,
-                                "type": "int"
+                                "type": "uint"
                             }
                         },
                         {

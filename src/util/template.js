@@ -33,7 +33,7 @@ function stringToBytesGPSExample(line) {
     sense.push("T");
     sense.push({
       case: "T",
-      do: [null, ...spl.slice(1, spl.length - 1)],
+      do: [null, ...spl.slice(1, spl.length)],
     });
   } else if (spl[0] === "S") {
     sense.push("S");
