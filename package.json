@@ -1,6 +1,6 @@
 {
   "name": "blueprint-nodejs",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "The NodeJS onboarding blueprint for the 1NCE IoT Connectivity Suite",
   "scripts": {
     "onboarding_mqtt_udp_gps": "node ./src/examples/onboarding_mqtt_udp_gps/index.js",
