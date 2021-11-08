@@ -8,7 +8,8 @@
     "onboarding_mqtt": "node ./src/examples/onboarding_mqtt/index.js",
     "udp_gps": "node ./src/examples/udp_gps/index.js",
     "udp_env": "node ./src/examples/udp_env/index.js",
-    "coap_post": "node ./src/examples/coap_post/index.js"
+    "coap_post": "node ./src/examples/coap_post/index.js",
+    "tracker": "node ./src/examples/gps_tracker/index.js"
   },
   "keywords": [
     "mqtt",
@@ -21,6 +22,7 @@
   "license": "ISC",
   "dependencies": {
     "aws-iot-device-sdk": "^2.2.6",
-    "coap": "^0.24.0"
+    "coap": "^0.24.0",
+    "termux-api": "^0.0.1"
   }
 }
