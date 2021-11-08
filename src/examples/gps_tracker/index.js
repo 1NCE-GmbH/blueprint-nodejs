@@ -2,7 +2,7 @@ var api = require('termux-api').default;
 
 let result = api.createCommand()
             .location()
-            .fromGPSProvider()
+            .fromNetworkProvider()
             .requestOnce()
             .build()
             .run();
