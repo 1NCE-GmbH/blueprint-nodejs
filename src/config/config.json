@@ -20,6 +20,11 @@
         "reqPath": "",
         "postPayload": {  "timestamp": 32423434324,  "desc": "Example message"},
         "messageAmount": 10
+    },
+    "location": {
+        "provider": "passive",
+        "requestType": "last",
+        "intervalMS": 4000
     }
     
 }
