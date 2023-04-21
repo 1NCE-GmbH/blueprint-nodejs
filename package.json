@@ -20,7 +20,7 @@
   "author": "1NCE",
   "license": "ISC",
   "dependencies": {
-    "aws-iot-device-sdk": "^2.2.6",
+    "aws-iot-device-sdk": "^2.2.12",
     "coap": "^0.24.0"
   }
 }
